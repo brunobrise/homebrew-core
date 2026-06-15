@@ -6,7 +6,7 @@ class Fastmcp < Formula
   url "https://files.pythonhosted.org/packages/29/18/46beaec18c9f86a599ae3f9cdf6677dd6b50240cfd844d18233710b47f13/fastmcp-3.4.2.tar.gz"
   sha256 "b468722946fc467c3796a6572f7a14d93d48c014cf8fea12910245220cbbe4e1"
   license "Apache-2.0"
-  head "https://github.com/jlowin/fastmcp.git", branch: "main"
+  head "https://github.com/PrefectHQ/fastmcp.git", branch: "main"
 
   bottle do
     sha256 cellar: :any, arm64_tahoe:   "8d2f06dd62e7c30ca425d014281bb4769246b166a1201ea553c028dde10059a9"
