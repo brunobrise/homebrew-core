@@ -1,12 +1,12 @@
 class Xcinfo < Formula
   desc "Tool to get information about and install available Xcode versions"
-  homepage "https://github.com/xcodereleases/xcinfo"
+  homepage "https://github.com/XcodeReleasesOrg/xcinfo"
   license "MIT"
-  head "https://github.com/xcodereleases/xcinfo.git", branch: "master"
+  head "https://github.com/XcodeReleasesOrg/xcinfo.git", branch: "master"
 
   stable do
     # TODO: Remove maximum_macos on the next release and update license
-    url "https://github.com/xcodereleases/xcinfo/archive/refs/tags/1.0.3.tar.gz"
+    url "https://github.com/XcodeReleasesOrg/xcinfo/archive/refs/tags/1.0.3.tar.gz"
     sha256 "b22f56193e4de8b71bbdaf99c17cec03f291d333d095311ad7aab74b5fb50c5a"
     depends_on maximum_macos: [:sonoma, :build]
   end
