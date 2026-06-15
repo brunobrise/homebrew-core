@@ -1,11 +1,11 @@
 class Podman < Formula
   desc "Tool for managing OCI containers and pods"
   homepage "https://podman.io/"
-  url "https://github.com/containers/podman/archive/refs/tags/v5.8.3.tar.gz"
+  url "https://github.com/podman-container-tools/podman/archive/refs/tags/v5.8.3.tar.gz"
   sha256 "c54a2ec4b4fb5577288992aaa78684397ec3552fb2d1234d910ec50097d05c0f"
   license all_of: ["Apache-2.0", "GPL-3.0-or-later"]
   compatibility_version 1
-  head "https://github.com/containers/podman.git", branch: "main"
+  head "https://github.com/podman-container-tools/podman.git", branch: "main"
 
   # There can be a notable gap between when a version is tagged and a
   # corresponding release is created and upstream uses GitHub releases to
@@ -33,7 +33,7 @@ class Podman < Formula
 
   on_macos do
     depends_on "make" => :build
-    depends_on macos: :ventura # see discussions in https://github.com/containers/podman/issues/22121
+    depends_on macos: :ventura # see discussions in https://github.com/podman-container-tools/podman/issues/22121
   end
 
   on_linux do
@@ -55,7 +55,7 @@ class Podman < Formula
   end
 
   # Bump these resources versions to match those in the corresponding version-tagged Makefile
-  # at https://github.com/containers/podman/blob/#{version}/contrib/pkginstaller/Makefile
+  # at https://github.com/podman-container-tools/podman/blob/#{version}/contrib/pkginstaller/Makefile
   #
   # More context: https://github.com/Homebrew/homebrew-core/pull/205303
   resource "gvproxy" do
