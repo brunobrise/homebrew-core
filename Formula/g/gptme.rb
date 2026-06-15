@@ -7,7 +7,7 @@ class Gptme < Formula
   sha256 "96e17e9dd82c409743b1b81dad08c6c024ace108d829f80c557be8eb2c429ffb"
   license "MIT"
   revision 11
-  head "https://github.com/ErikBjare/gptme.git", branch: "master"
+  head "https://github.com/gptme/gptme.git", branch: "master"
 
   bottle do
     sha256 cellar: :any,                 arm64_tahoe:   "3b250eef9868027cb253af99fb4cf830f9c328a2202599859278a57b010cb937"
